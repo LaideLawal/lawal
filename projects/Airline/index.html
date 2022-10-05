@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <title> Macrah Airline | The World Best Airline </title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="brand">Macrah Airline </a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="#">Booking</a>
+                <a href="#">Manage</a>
+                <a href="#">Explore</a>
+                <a href="#">Career</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <video class="video-slide active" src="../../videos/video2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="../../videos/video3.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="../../videos/video4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="../../videos/video5.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="../../videos/video6.mp4" autoplay muted loop></video>
+        <div class="content active">
+            <h1>Nutritious<br><span>Meal</span></h1>
+            <p>Lorem ipsum dolor sit amet. Qui quia ipsa rem corporis distinctio ut alias velit qui illo quidem aut
+                consectetur esse. Qui minima sint est velit voluptate ut voluptas commodi aut eveniet fuga sit molestiae
+                repellendus. Eum galisum dignissimos est assumenda voluptatibus et libero voluptatibus nam inventore
+                eveniet ut tempore debitis ex voluptates voluptas</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Restful.<br><span>Sleep</span></h1>
+            <p>Lorem ipsum dolor sit amet. Qui quia ipsa rem corporis distinctio ut alias velit qui illo quidem aut
+                consectetur esse. Qui minima sint est velit voluptate ut voluptas commodi aut eveniet fuga sit molestiae
+                repellendus. Eum galisum dignissimos est assumenda voluptatibus et libero voluptatibus nam inventore
+                eveniet ut tempore debitis ex voluptates voluptas</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Amazing.<br><span>cabin</span></h1>
+            <p>Lorem ipsum dolor sit amet. Qui quia ipsa rem corporis distinctio ut alias velit qui illo quidem aut
+                consectetur esse. Qui minima sint est velit voluptate ut voluptas commodi aut eveniet fuga sit molestiae
+                repellendus. Eum galisum dignissimos est assumenda voluptatibus et libero voluptatibus nam inventore
+                eveniet ut tempore debitis ex voluptates voluptas</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Unparallel.<br><span>Entertainment</span></h1>
+            <p>Lorem ipsum dolor sit amet. Qui quia ipsa rem corporis distinctio ut alias velit qui illo quidem aut
+                consectetur esse. Qui minima sint est velit voluptate ut voluptas commodi aut eveniet fuga sit molestiae
+                repellendus. Eum galisum dignissimos est assumenda voluptatibus et libero voluptatibus nam inventore
+                eveniet ut tempore debitis ex voluptates voluptas</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Healthy.<br><span>Breakfast</span></h1>
+            <p>Lorem ipsum dolor sit amet. Qui quia ipsa rem corporis distinctio ut alias velit qui illo quidem aut
+                consectetur esse. Qui minima sint est velit voluptate ut voluptas commodi aut eveniet fuga sit molestiae
+                repellendus. Eum galisum dignissimos est assumenda voluptatibus et libero voluptatibus nam inventore
+                eveniet ut tempore debitis ex voluptates voluptas</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slide-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <script>
+
+        // JavaScript for responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector('.navigation')
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        // Javascript for video navigation
+
+        const btns = document.querySelectorAll('.nav-btn');
+        const slides = document.querySelectorAll('.video-slide');
+        const contents = document.querySelectorAll('.content');
+
+        var sliderNav = function (manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove('active');
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+            });
+
+            contents.forEach((content) => {
+                content.classList.remove('active');
+            });
+
+            btns[manual].classList.add('active');
+            slides[manual].classList.add('active');
+            contents[manual].classList.add('active');
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener('click', () => {
+                sliderNav(i);
+            });
+        });
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
