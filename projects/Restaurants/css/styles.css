@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 80px;
+    background-color: #343434;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand img {
+    width: 120px;
+    margin-left: 30px;
+    padding-top: 25px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li  {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 30px;
+    line-height: 20px;
+}
+
+nav ul li button {
+    padding: 10px 15px;
+    background-color: #00ee00;
+   cursor: pointer;
+    border-radius: 10px;
+}
+
+.banner {
+    height: calc(100vh - 80px);
+    background-color: black;
+}
+
+.cta  {
+    height: 80vh;
+    background-image: url("../images/bgd-image2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin-top: -72px;
+}
+
+.speciality {
+    height: 80vh;
+}
+
+.special    {
+    height: 100vh;
+    background-image: url("../images/background-imageblack.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+   
+}
+
+.booking {
+    height: 80vh;
+}
+
+.chef    {
+    height: 60vh;
+    background-image: url("../images/background3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+   
+}
+
+.review {
+    height: 80vh;
+}
+
+.footer   {
+    height: 50vh;
+    background-image: url("../images/background-imageblack.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: white;
+    padding-top: 100px;
+    padding-left: 200px;
+    text-align: center;  
+}
+
+.col {
+    text-align: left;
+}
